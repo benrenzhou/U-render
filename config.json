@@ -7,7 +7,7 @@
     "inbounds": [
         {
             "port": 8080,
-            "protocol": "uvless",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
@@ -25,15 +25,15 @@
                         "dest": 3002
                     },
                     {
-                        "path": "/uvmess",
+                        "path": "/vmess",
                         "dest": 3003
                     },
                     {
-                        "path": "/utrojan",
+                        "path": "/trojan",
                         "dest": 3004
                     },
                     {
-                        "path": "/ushadowsocks",
+                        "path": "/shadowsocks",
                         "dest": 3005
                     }
                 ]
@@ -45,7 +45,7 @@
         {
             "port": 3001,
             "listen": "127.0.0.1",
-            "protocol": "uvless",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
@@ -62,7 +62,7 @@
         {
             "port": 3002,
             "listen": "127.0.0.1",
-            "protocol": "uvless",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
@@ -76,7 +76,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/uvless"
+                    "path": "/vless"
                 }
             },
             "sniffing": {
@@ -92,7 +92,7 @@
         {
             "port": 3003,
             "listen": "127.0.0.1",
-            "protocol": "uvmess",
+            "protocol": "vmess",
             "settings": {
                 "clients": [
                     {
@@ -104,7 +104,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/uvmess"
+                    "path": "/vmess"
                 }
             },
             "sniffing": {
@@ -120,7 +120,7 @@
         {
             "port": 3004,
             "listen": "127.0.0.1",
-            "protocol": "utrojan",
+            "protocol": "trojan",
             "settings": {
                 "clients": [
                     {
@@ -132,7 +132,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/utrojan"
+                    "path": "/trojan"
                 }
             },
             "sniffing": {
@@ -148,7 +148,7 @@
         {
             "port": 3005,
             "listen": "127.0.0.1",
-            "protocol": "ushadowsocks",
+            "protocol": "shadowsocks",
             "settings": {
                 "clients": [
                     {
@@ -161,7 +161,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/ushadowsocks"
+                    "path": "/shadowsocks"
                 }
             },
             "sniffing": {
