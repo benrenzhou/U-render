@@ -7,11 +7,11 @@
     "inbounds": [
         {
             "port": 8080,
-            "protocol": "vless",
+            "protocol": "uvless",
             "settings": {
                 "clients": [
                     {
-                        "id": "de04add9-5c68-8bab-950c-08cd5320df18",
+                        "id": "e9fc9d4c-f644-11ed-b67e-0242ac120002",
                         "flow": "xtls-rprx-direct"
                     }
                 ],
@@ -25,15 +25,15 @@
                         "dest": 3002
                     },
                     {
-                        "path": "/vmess",
+                        "path": "/uvmess",
                         "dest": 3003
                     },
                     {
-                        "path": "/trojan",
+                        "path": "/utrojan",
                         "dest": 3004
                     },
                     {
-                        "path": "/shadowsocks",
+                        "path": "/ushadowsocks",
                         "dest": 3005
                     }
                 ]
@@ -45,11 +45,11 @@
         {
             "port": 3001,
             "listen": "127.0.0.1",
-            "protocol": "vless",
+            "protocol": "uvless",
             "settings": {
                 "clients": [
                     {
-                        "id": "de04add9-5c68-8bab-950c-08cd5320df18"
+                        "id": "e9fc9d4c-f644-11ed-b67e-0242ac120002"
                     }
                 ],
                 "decryption": "none"
@@ -62,11 +62,11 @@
         {
             "port": 3002,
             "listen": "127.0.0.1",
-            "protocol": "vless",
+            "protocol": "uvless",
             "settings": {
                 "clients": [
                     {
-                        "id": "de04add9-5c68-8bab-950c-08cd5320df18",
+                        "id": "e9fc9d4c-f644-11ed-b67e-0242ac120002",
                         "level": 0
                     }
                 ],
@@ -76,7 +76,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/vless"
+                    "path": "/uvless"
                 }
             },
             "sniffing": {
@@ -92,11 +92,11 @@
         {
             "port": 3003,
             "listen": "127.0.0.1",
-            "protocol": "vmess",
+            "protocol": "uvmess",
             "settings": {
                 "clients": [
                     {
-                        "id": "de04add9-5c68-8bab-950c-08cd5320df18",
+                        "id": "e9fc9d4c-f644-11ed-b67e-0242ac120002",
                         "alterId": 0
                     }
                 ]
@@ -104,7 +104,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/vmess"
+                    "path": "/uvmess"
                 }
             },
             "sniffing": {
@@ -120,11 +120,11 @@
         {
             "port": 3004,
             "listen": "127.0.0.1",
-            "protocol": "trojan",
+            "protocol": "utrojan",
             "settings": {
                 "clients": [
                     {
-                        "password": "de04add9-5c68-8bab-950c-08cd5320df18"
+                        "password": "e9fc9d4c-f644-11ed-b67e-0242ac120002"
                     }
                 ]
             },
@@ -132,7 +132,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/trojan"
+                    "path": "/utrojan"
                 }
             },
             "sniffing": {
@@ -148,12 +148,12 @@
         {
             "port": 3005,
             "listen": "127.0.0.1",
-            "protocol": "shadowsocks",
+            "protocol": "ushadowsocks",
             "settings": {
                 "clients": [
                     {
                         "method": "chacha20-ietf-poly1305",
-                        "password": "de04add9-5c68-8bab-950c-08cd5320df18"
+                        "password": "e9fc9d4c-f644-11ed-b67e-0242ac120002"
                     }
                 ],
                 "decryption": "none"
@@ -161,7 +161,7 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/shadowsocks"
+                    "path": "/ushadowsocks"
                 }
             },
             "sniffing": {
